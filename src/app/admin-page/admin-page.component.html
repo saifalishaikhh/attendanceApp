@@ -1,0 +1,23 @@
+
+
+     <div class="container">
+        <table class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Login Time</th>
+            <th>Logout Time</th>
+            <th>Date</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let emp of empList">
+            <td><span>{{emp.name}}</span></td>
+            <td><span>{{emp.login}}</span></td>
+            <td><span>{{emp.logout}}</span></td>
+            <td><span>{{emp.date}}</span></td>
+           
+          </tr>
+          </tbody>
+        </table>
+      </div>
