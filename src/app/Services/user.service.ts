@@ -62,15 +62,12 @@ export class UserService {
     return this.http.post(url,{ });
   }
 
-  loginAttendance(){
+  loginAttendance(userdata:any){
 
-    let data={
-      "name":"hulk",
-      "login":"75:11",
-      "logout":"33:33",
-      "date":"27/12/1998"
+    return this.http.post('http://localhost:8080/task/attendance',userdata)
+  }
+  logoutAttendance(userdata:any){
 
-    }
-    return this.http.post('http://localhost:8080/task/attendance',data)
+    return this.http.post('http://localhost:8080/task/updateAttendance',userdata)
   }
 }

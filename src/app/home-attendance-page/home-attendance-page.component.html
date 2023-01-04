@@ -8,8 +8,8 @@
       <h5 class="card-title" >Date : {{now | date:'dd/MM/yyyy'}}</h5>
       <p class="card-text" >Time  {{now |date:'HH:mm:ss'}}</p>
     <div class="container mb-3">
-      <button type="submit" (submit)="attandance()" class="btn btn-primary ms-3">SIGN IN</button>
-      <button type="submit" class="btn btn-primary ms-3">SIGN OUT</button>
+      <button type="submit" (click)="attandance()" class="btn btn-primary ms-3">SIGN IN</button>
+      <button type="submit" (click)="signOutAttendance()" class="btn btn-primary ms-3">SIGN OUT</button>
     </div>
     <div class="container mt-5">
       <button type="submit" class="btn btn-primary" routerLink="/user-attendance-report">View report</button>
